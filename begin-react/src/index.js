@@ -29,21 +29,27 @@ import Collapse from './components/Collapse';
 
 const App = () => {
   return (
-    <div>
-      <div className="card-group">
-      
-        <Collapse href="collapseExample1">
-        <Card cardTitle="deneme" cardText="denemetext1" updatedTime="one hour" image="https://picsum.photos/id/1/200/300" />
-        </Collapse>
-        <Collapse href="collapseExample2">
-        <Card cardTitle="deneme2" cardText="denemetext2" updatedTime="one hour"
-          image="https://picsum.photos/id/2/200/300" />
-        </Collapse>
-        <Collapse href="collapseExample3">
-        <Card cardTitle="deneme3" cardText="denemetext3" updatedTime="one hour"
-          image="https://picsum.photos/id/3/200/300" />
-        </Collapse>
-       
+    <div className='container'>
+      <div className='row'>
+        <div className="card-group w-100">
+          <div className='col'>
+            <Collapse href="collapseExample1">
+              <Card cardText="denemetext1" updatedTime="one hour" image="https://picsum.photos/id/1/200/200" />
+            </Collapse>
+          </div>
+          <div className='col'>
+            <Collapse href="collapseExample2">
+              <Card cardTitle="deneme2" updatedTime="one hour"
+                image="https://picsum.photos/id/2/200/200" />
+            </Collapse>
+          </div>
+          <div className='col'>
+            <Collapse href="collapseExample3">
+              <Card cardTitle="deneme3" cardText="denemetext3" updatedTime="one hour"
+                image="https://picsum.photos/id/3/200/200" />
+            </Collapse>
+          </div>
+        </div>
       </div>
     </div>
   )
