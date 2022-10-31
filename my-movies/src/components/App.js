@@ -48,7 +48,10 @@ class App extends React.Component{
       // this.setState({
       //   movies:newMovieList
       // })
-      
+      this.setState(state=>({
+        movies:newMovieList
+      }))
+
     }
     render(){
         return(
