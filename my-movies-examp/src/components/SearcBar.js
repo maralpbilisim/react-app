@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 
 export default class SearcBar extends Component {
   
@@ -17,10 +18,12 @@ export default class SearcBar extends Component {
               />
           </div>
           <div className="col-2">
-              <button type="button" 
+              <Link 
+              to="/add"
+              type="button" 
                       className="btn btn-md btn-danger"
                       style={{float:"right"}}>Add Movie
-              </button>
+              </Link>
           </div>
       </div>
   </form>
