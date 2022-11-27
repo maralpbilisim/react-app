@@ -3,6 +3,7 @@ import SearchBar from './SearcBar'
 import MovieList from './MovieList'
 import axios from 'axios'
 import AddMovie from "./AddMovie";
+import EditMovie from './EditMovie';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -85,6 +86,7 @@ addMovie = async (movie) => {
                         )}>
 
                   </Route>
+                  <Route path="/edit/:id" component={EditMovie} />
           </Switch>
       </div>
       </Router>
