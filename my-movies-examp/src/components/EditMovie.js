@@ -17,7 +17,7 @@ class EditMovie extends React.Component {
         const id = this.props.match.params.id;
         //console.log(id)
 
-        const response = await axios.get(`http://localhost:3002/movies/${id}`);
+        const response = await axios.get(`http://localhost:3004/movies/${id}`);
         //console.log(response.data);
 
         const movie = response.data;
